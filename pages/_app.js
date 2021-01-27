@@ -31,6 +31,13 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <ThemeProvider theme={theme}>
+      <head>
+        <meta property="og:title" content="Home"/>
+        <meta property="og:description" content="Welcome to my blog!"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://phiilu.com/"/>
+        <meta property="og:image" content="https://phiilu.com/images/og/977261ad2dded809bf3f4bdcf453f416.png"/>
+      </head>
         <GlobalStyle />
         <Component {...pageProps} />
       </ThemeProvider>
