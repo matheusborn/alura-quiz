@@ -36,11 +36,21 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
 
-        <meta property="og:title" content="Home"/>
-        <meta property="og:description" content="Imersão Alura - Quiz de Matheus Barros"/>
+        <title>Imersão Alura - Quiz de Friends</title>
+        <meta name="description" content="Imersão Alura - Quiz de Matheus Barros"/>
+
+        <meta property="og:url" content="https://alura-quiz.matheusborn.vercel.app/"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://vercel.com/matheusborn/alura-quiz"/>
+        <meta property="og:title" content="Imersão Alura - Quiz de Friends"/>
+        <meta property="og:description" content="Imersão Alura - Quiz de Matheus Barros"/>
         <meta property="og:image" content="https://i.pinimg.com/originals/af/e3/0e/afe30e391b64bfe4c6bc951f3eecb604.jpg"/>
+
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:domain" content="alura-quiz.matheusborn.vercel.app"/>
+        <meta property="twitter:url" content="https://alura-quiz.matheusborn.vercel.app/"/>
+        <meta name="twitter:title" content="Imersão Alura - Quiz de Friends"/>
+        <meta name="twitter:description" content="Imersão Alura - Quiz de Matheus Barros"/>
+        <meta name="twitter:image" content="https://i.pinimg.com/originals/af/e3/0e/afe30e391b64bfe4c6bc951f3eecb604.jpg"/>
       </Head>
         <GlobalStyle />
         <Component {...pageProps} />
