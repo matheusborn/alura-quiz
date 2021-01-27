@@ -1,5 +1,6 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import db from '../db.json';
+import Head from 'next/head'
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -31,13 +32,16 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <ThemeProvider theme={theme}>
-      <head>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+
         <meta property="og:title" content="Home"/>
-        <meta property="og:description" content="Welcome to my blog!"/>
+        <meta property="og:description" content="Imersão Alura - Quiz de Matheus Barros"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://phiilu.com/"/>
-        <meta property="og:image" content="https://phiilu.com/images/og/977261ad2dded809bf3f4bdcf453f416.png"/>
-      </head>
+        <meta property="og:url" content="https://vercel.com/matheusborn/alura-quiz"/>
+        <meta property="og:image" content="https://i.pinimg.com/originals/af/e3/0e/afe30e391b64bfe4c6bc951f3eecb604.jpg"/>
+      </Head>
         <GlobalStyle />
         <Component {...pageProps} />
       </ThemeProvider>
